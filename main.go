@@ -1,10 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/nomadcoders/nomadcoin/blockchain"
 
 func main() {
-	a := 2
-	b := &a
-	a = 12
-	fmt.Println(*b, &a)
+	chain := blockchain.GetBlockchain()
 }
